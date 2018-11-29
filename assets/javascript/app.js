@@ -1,31 +1,24 @@
 $(document).ready(function() {
+
     //Trivia Questions and Answers
-var questions = [{
-    question1: "question holder?",
-    answer1: ["a", "b", "c", "d"],
-    correct: "b",
-},
-{
-    question2: "question holder?",
-    answer2: ["a", "b", "c", "d"],
-    correct: "a",
-},
-{
-    question3: "question holder?",
-    answer3: ["a", "b", "c", "d"],
-    correct: "d",
-}
-]
-
-console.log(questions);
+var question1 = "Question Placeholder?"
 
 
+console.log(question1);
+
+document.getElementById("answers1").style.visibility = "hidden";
+
+//Start Button appends the Game and Starts game
 function startGame(){
-    $("#game").append ("<div>" + questions.question1 + questions.answer1 + "</div>")
+    $("#question1").append ("<div>" + question1 + "</div>")
+    document.getElementById("answers1").style.visibility = "visible";
+    
 
 }
 $('#start-btn').on('click', function(){
     startGame();
+    $('#start-btn').hide();
+
 });
 });
 
