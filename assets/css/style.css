@@ -5,3 +5,47 @@
 .div2{
     text-align: center;
 }
+
+#start-btn{
+    z-index: 1000;
+}
+
+#answers1{
+    text-align: center;
+}
+
+#answers2{
+    text-align: center;
+}
+
+#answers3{
+    text-align: center;
+}
+
+#answers4{
+    text-align: center;
+}
+
+#answers5{
+    text-align: center;
+}
+
+#question1{
+    text-align: center;
+}
+
+#question2{
+    text-align: center;
+}
+
+#question3{
+    text-align: center;
+}
+
+#question4{
+    text-align: center;
+}
+
+#question5{
+    text-align: center;
+}
