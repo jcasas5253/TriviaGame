@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    var correctAnsw = 0;
+    var incorrect = 0;
     //Hides the answers before start button is clicked
     document.getElementById("answers1").style.visibility = "hidden";
     document.getElementById("answers2").style.visibility = "hidden";
@@ -26,27 +28,29 @@ $(document).ready(function () {
         document.getElementById("question5").style.visibility = "visible";
     }
 
-    //Start button brings up game and starts the clock
+    //Start button brings up game and starts the timer
     $('#start-btn').on('click', function () {
         startGame();
         $('#start-btn').hide();
-        ProgressCountdown(10, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => alert(`Page has started: ${value}.`));
+        
+        //timer
+        ProgressCountdown(10, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => alert(`You Ran Out Of Time!`));
 
-function ProgressCountdown(timeleft, bar, text) {
-  return new Promise((resolve, reject) => {
-    var countdownTimer = setInterval(() => {
-      timeleft--;
+        function ProgressCountdown(timeleft, bar, text) {
+            return new Promise((resolve, reject) => {
+                var countdownTimer = setInterval(() => {
+                    timeleft--;
 
-      document.getElementById(bar).value = timeleft;
-      document.getElementById(text).textContent = timeleft;
+                    document.getElementById(bar).value = timeleft;
+                    document.getElementById(text).textContent = timeleft;
 
-      if (timeleft <= 0) {
-        clearInterval(countdownTimer);
-        resolve(true);
-      }
-    }, 1000);
-  });
-}
+                    if (timeleft <= 0) {
+                        clearInterval(countdownTimer);
+                        resolve(true);
+                    }
+                }, 1000);
+            });
+        }
     });
 });
 
