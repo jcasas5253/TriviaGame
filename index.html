@@ -30,59 +30,66 @@
             <div class="col-md-12 text-center">
                 <progress value="10" max="10" id="pageBeginCountdown"></progress>
                 <p> Begining in <span id="pageBeginCountdownText">10 </span> seconds</p>
-            <h2>Question Placeholder?</h2>
-            </div></div>
+                <h2>Question Placeholder?</h2>
+            </div>
+        </div>
         <!--Question 1 Answers-->
-        <div id="answers1">
-            <input type="radio" id="myRadio" name="option1">a.
-            <input type="radio" id="myRadio" name="option1">b.
-            <input type="radio" id="correct" name="option1">c.
-            <input type="radio" id="myRadio" name="option1">d.
-        </div>
+        <form id="myForm" action="handle-data.php">
+            <div id="answers1">
+                <input type="radio" id="myRadio" value="option1" name="ans1">a.
+                <input type="radio" id="myRadio" value="option2" name="ans1">b.
+                <input type="radio" id="correct" value="option3" name="ans1">c.
+                <input type="radio" id="myRadio" value="option4" name="ans1">d.
+            </div>
 
-        <!--Question 2 Answers-->
-        <div id="question2">
-            <h2>Question Placeholder?</h2>
-        </div>
-        <div id="answers2">
-            <input type="radio" id="myRadio" name="option2">a.
-            <input type="radio" id="correct" name="option2">b.
-            <input type="radio" id="myRadio" name="option2">c.
-            <input type="radio" id="myRadio" name="option2">d.
-        </div>
+            <!--Question 2 Answers-->
+            <div id="question2">
+                <h2>Question Placeholder?</h2>
+            </div>
+            <div id="answers2">
+                <input type="radio" id="myRadio" name="option2">a.
+                <input type="radio" id="correct" name="option2">b.
+                <input type="radio" id="myRadio" name="option2">c.
+                <input type="radio" id="myRadio" name="option2">d.
+            </div>
 
-        <!--Question 3 Answers-->
-        <div id="question3">
-            <h2>Question Placeholder?</h2>
-        </div>
-        <div id="answers3">
-            <input type="radio" id="myRadio" name="option3">a.
-            <input type="radio" id="myRadio" name="option3">b.
-            <input type="radio" id="correct" name="option3">c.
-            <input type="radio" id="myRadio" name="option3">d.
-        </div>
+            <!--Question 3 Answers-->
+            <div id="question3">
+                <h2>Question Placeholder?</h2>
+            </div>
+            <div id="answers3">
+                <input type="radio" id="myRadio" name="option3">a.
+                <input type="radio" id="myRadio" name="option3">b.
+                <input type="radio" id="correct" name="option3">c.
+                <input type="radio" id="myRadio" name="option3">d.
+            </div>
 
-        <!--Question 4 Answers-->
-        <div id="question4">
-            <h2>Question Placeholder?</h2>
-        </div>
-        <div id="answers4">
-            <input type="radio" id="correct" name="option4">a.
-            <input type="radio" id="myRadio" name="option4">b.
-            <input type="radio" id="myRadio" name="option4">c.
-            <input type="radio" id="myRadio" name="option4">d.
-        </div>
+            <!--Question 4 Answers-->
+            <div id="question4">
+                <h2>Question Placeholder?</h2>
+            </div>
+            <div id="answers4">
+                <input type="radio" id="correct" name="option4">a.
+                <input type="radio" id="myRadio" name="option4">b.
+                <input type="radio" id="myRadio" name="option4">c.
+                <input type="radio" id="myRadio" name="option4">d.
+            </div>
 
-        <!--Question 5 Answers-->
-        <div id="question5">
-            <h2>Question Placeholder?</h2>
-        </div>
-        <div id="answers5">
-            <input type="radio" id="myRadio" name="option5">a.
-            <input type="radio" id="myRadio" name="option5">b.
-            <input type="radio" id="myRadio" name="option5">c.
-            <input type="radio" id="correct" name="option5">d.
-        </div>
+            <!--Question 5 Answers-->
+            <div id="question5">
+                <h2>Question Placeholder?</h2>
+            </div>
+            <div id="answers5">
+                <input type="radio" id="myRadio" name="option5">a.
+                <input type="radio" id="myRadio" name="option5">b.
+                <input type="radio" id="myRadio" name="option5">c.
+                <input type="radio" id="correct" name="option5">d.
+            </div>
+            <!--Submit Button-->
+            <div id="submit">
+            <button id="submit-btn" type="button" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+        </form>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

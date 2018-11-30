@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    var correctAnsw = 0;
-    var incorrect = 0;
     //Hides the answers before start button is clicked
     document.getElementById("answers1").style.visibility = "hidden";
     document.getElementById("answers2").style.visibility = "hidden";
@@ -28,11 +26,16 @@ $(document).ready(function () {
         document.getElementById("question5").style.visibility = "visible";
     }
 
+    var correctAnsw = 0;
+    var incorrect = 0;
+    var UserAnsw = [];
+    console.log("Correct" + correctAnsw);
+
     //Start button brings up game and starts the timer
     $('#start-btn').on('click', function () {
         startGame();
         $('#start-btn').hide();
-        
+
         //timer
         ProgressCountdown(10, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => alert(`You Ran Out Of Time!`));
 
@@ -52,7 +55,14 @@ $(document).ready(function () {
             });
         }
     });
+    //$('#correct').click(function() {
+    //if($('#correct').is(':checked')) { correctAnsw++; }
+    //console.log(correctAnsw);
+
+
+    
 });
+
 
 
 
