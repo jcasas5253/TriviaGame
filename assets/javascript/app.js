@@ -59,6 +59,21 @@ $(document).ready(function () {
     //if($('#correct').is(':checked')) { correctAnsw++; }
     //console.log(correctAnsw);
 
+    $('#submit-btn').on('click', function () {
+        if($('#correct1').is(':checked')) { correctAnsw++; }
+        console.log(correctAnsw);
+        if($('#correct2').is(':checked')) { correctAnsw++; }
+        console.log(correctAnsw);
+        if($('#correct3').is(':checked')) { correctAnsw++; }
+        console.log(correctAnsw);
+        if($('#correct4').is(':checked')) { correctAnsw++; }
+        console.log(correctAnsw);
+        if($('#correct5').is(':checked')) { correctAnsw++; }
+        console.log(correctAnsw);
+    });
+
+
+        
 
     
 });
