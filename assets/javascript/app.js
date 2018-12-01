@@ -11,6 +11,7 @@ $(document).ready(function () {
     document.getElementById("question3").style.visibility = "hidden";
     document.getElementById("question4").style.visibility = "hidden";
     document.getElementById("question5").style.visibility = "hidden";
+    document.getElementById("refresh-btn").style.visibility = "hidden";
 
     //Start Button appends the Game/Starts game
     function startGame() {
@@ -33,10 +34,16 @@ $(document).ready(function () {
     $('#start-btn').on('click', function () {
         startGame();
         $('#start-btn').hide();
-
-    //Submit Button
+        
+     //Submit Button
     $('#submit-btn').on('click', function () {
         score();
+        document.getElementById("refresh-btn").style.visibility = "visible";
+    
+    //Refresh Button
+    $('#refresh-btn').on('click', function () {
+        location.reload();
+    });
     });
 
         //timer
@@ -53,11 +60,12 @@ $(document).ready(function () {
                     if (timeleft <= 0) {
                         clearInterval(countdownTimer);
                         resolve(true);
-                        score();
                     }
                 }, 1000);
             });
         }
+        
+        
         function score() {
             if($('#correct1').is(':checked')) { correctAnsw++; }
             console.log("correct: " + correctAnsw);
