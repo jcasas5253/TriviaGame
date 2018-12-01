@@ -47,7 +47,7 @@ $(document).ready(function () {
     });
 
         //timer
-        ProgressCountdown(20, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => alert(`You Ran Out Of Time!`));
+        ProgressCountdown(20, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => alert(`You Ran Out Of Time! Try Again.`));
 
         function ProgressCountdown(timeleft, bar, text) {
             return new Promise((resolve, reject) => {
@@ -60,6 +60,7 @@ $(document).ready(function () {
                     if (timeleft <= 0) {
                         clearInterval(countdownTimer);
                         resolve(true);
+                        location.reload();
                     }
                 }, 1000);
             });
