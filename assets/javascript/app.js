@@ -35,7 +35,7 @@ $(document).ready(function () {
         $('#start-btn').hide();
 
         //timer
-        ProgressCountdown(10, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => alert(`You Ran Out Of Time!`));
+        ProgressCountdown(20, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => alert(`You Ran Out Of Time!`));
 
         function ProgressCountdown(timeleft, bar, text) {
             return new Promise((resolve, reject) => {
