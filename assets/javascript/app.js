@@ -62,6 +62,7 @@ $(document).ready(function () {
                         resolve(true);
                         location.reload();
                     }
+                    console.log(timeleft);
                 }, 1000);
             });
         }
@@ -150,7 +151,6 @@ $(document).ready(function () {
 
     
 });
-
 
 
 
