@@ -13,22 +13,27 @@
 
 #answers1{
     text-align: center;
+    padding: 5px;
 }
 
 #answers2{
     text-align: center;
+    padding: 5px;
 }
 
 #answers3{
     text-align: center;
+    padding: 5px;
 }
 
 #answers4{
     text-align: center;
+    padding: 5px;
 }
 
 #answers5{
     text-align: center;
+    padding: 5px;
 }
 
 #question1{
@@ -70,4 +75,7 @@
 
 h2{
     font-size: 20px;
+    background-color: black;
+    color: #ffffff;
+    padding: 5px;
 }
