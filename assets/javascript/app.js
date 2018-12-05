@@ -142,6 +142,7 @@ $(document).ready(function () {
             document.getElementById("question3").style.visibility = "hidden";
             document.getElementById("question4").style.visibility = "hidden";
             document.getElementById("question5").style.visibility = "hidden";
+            document.getElementById("refresh-btn").style.visibility = "visible";
             $("#right").append("Answers Correct: " + correctAnsw);
             $("#wrong").append("Answers Incorrect: " + incorrect);
         }
