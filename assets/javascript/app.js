@@ -34,17 +34,17 @@ $(document).ready(function () {
     $('#start-btn').on('click', function () {
         startGame();
         $('#start-btn').hide();
-        
-     //Submit Button
-    $('#submit-btn').on('click', function () {
-        score();
-        document.getElementById("refresh-btn").style.visibility = "visible";
-    
-    //Refresh Button
-    $('#refresh-btn').on('click', function () {
-        location.reload();
-    });
-    });
+
+        //Submit Button
+        $('#submit-btn').on('click', function () {
+            score();
+            document.getElementById("refresh-btn").style.visibility = "visible";
+
+            //Refresh Button
+            $('#refresh-btn').on('click', function () {
+                location.reload();
+            });
+        });
 
         //timer
         ProgressCountdown(20, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => alert(`You Ran Out Of Time! Try Again.`));
@@ -62,70 +62,74 @@ $(document).ready(function () {
                         resolve(true);
                         location.reload();
                     }
+                    $('#submit-btn').on('click', function () {
+                        document.getElementById("refresh-btn").style.visibility = "visible";
+                        clearInterval(countdownTimer);
+                    });
                     console.log(timeleft);
                 }, 1000);
             });
         }
-        
-        
+
+
         function score() {
-            if($('#correct1').is(':checked')) { correctAnsw++; }
+            if ($('#correct1').is(':checked')) { correctAnsw++; }
             console.log("correct: " + correctAnsw);
-            
-            if($('#correct2').is(':checked')) { correctAnsw++; }
+
+            if ($('#correct2').is(':checked')) { correctAnsw++; }
             console.log("correct: " + correctAnsw);
-            
-            if($('#correct3').is(':checked')) { correctAnsw++; }
+
+            if ($('#correct3').is(':checked')) { correctAnsw++; }
             console.log("correct: " + correctAnsw);
-            
-            if($('#correct4').is(':checked')) { correctAnsw++; }
+
+            if ($('#correct4').is(':checked')) { correctAnsw++; }
             console.log("correct: " + correctAnsw);
-            
-            if($('#correct5').is(':checked')) { correctAnsw++; }
+
+            if ($('#correct5').is(':checked')) { correctAnsw++; }
             console.log("correct: " + correctAnsw);
-            
+
             if ($('#myRadio1').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio2').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio3').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio4').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio5').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio6').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio7').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio8').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio9').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio10').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio11').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio12').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio13').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio14').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
-            
+
             if ($('#myRadio1').is(':checked')) { incorrect++; }
             console.log("incorrect: " + incorrect);
             document.getElementById("answers1").style.visibility = "hidden";
@@ -147,11 +151,7 @@ $(document).ready(function () {
     //console.log(correctAnsw);
 
 
-        
-
-    
-});
 
 
 
-
+});    
