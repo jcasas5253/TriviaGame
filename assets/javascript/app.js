@@ -47,7 +47,7 @@ $(document).ready(function () {
         });
 
         //timer
-        ProgressCountdown(20, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => alert(`You Ran Out Of Time! Try Again.`));
+        ProgressCountdown(60, 'pageBeginCountdown', 'pageBeginCountdownText').then(value => alert(`You Ran Out Of Time! Try Again.`));
 
         function ProgressCountdown(timeleft, bar, text) {
             return new Promise((resolve, reject) => {
