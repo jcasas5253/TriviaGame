@@ -14,30 +14,36 @@
 #answers1{
     text-align: center;
     padding: 5px;
+    background-color: gray;
 }
 
 #answers2{
     text-align: center;
     padding: 5px;
+    background-color: gray;
 }
 
 #answers3{
     text-align: center;
     padding: 5px;
+    background-color: gray;
 }
 
 #answers4{
     text-align: center;
     padding: 5px;
+    background-color: gray;
 }
 
 #answers5{
     text-align: center;
     padding: 5px;
+    background-color: gray;
 }
 
 #question1{
     text-align: center;
+    background-color: black;
 }
 
 #question2{
@@ -78,4 +84,17 @@ h2{
     background-color: black;
     color: #ffffff;
     padding: 5px;
+}
+
+#myForm{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.time-text{
+    color: #ffffff;
+}
+
+body {
+    background-image: url("https://previews.123rf.com/images/dimapolie/dimapolie1809/dimapolie180900026/107831693-hockey-background-from-line-icon-linear-vector-pattern-vector-illustration.jpg");
 }
